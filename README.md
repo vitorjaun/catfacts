@@ -44,14 +44,14 @@ O desenho da arquitetura está no arquivo `arquitetura_cat_facts.png`
 
 ## 3 - Com o tempo, o time de analytics também sentiu necessidade de realizar suas próprias consultas sobre os dados, como a tecnologia mais conhecida por eles é o BigQuery, você precisa especificar o esquema da tabela de dados de fatos sobre gatos (cat facts), inclua os campos, tipos de campos e quaisquer outras considerações necessárias. A especificação pode ser feita por diagrama ou por código.
 
-### Campo | Formato | Descrição
---- | --- | ---
-id | STRING | Identificador único do fato sobre gatos.
-text | STRING | Texto contendo o fato sobre gatos.
-user | STRING | ID do usuário que criou o fato.
-created_at | TIMESTAMP | Data e hora de criação do fato.
-updated_at | TIMESTAMP | Data e hora de atualização do fato.
-status_verified | BOOLEAN | Indicador se o fato foi verificado.
+| Campo           | Formato    | Descrição                                |
+|-----------------|------------|------------------------------------------|
+| id              | STRING     | Identificador único do fato sobre gatos. |
+| text            | STRING     | Texto contendo o fato sobre gatos.       |
+| user            | STRING     | ID do usuário que criou o fato.          |
+| created_at      | TIMESTAMP  | Data e hora de criação do fato.          |
+| updated_at      | TIMESTAMP  | Data e hora de atualização do fato.      |
+| status_verified | BOOLEAN    | Indicador se o fato foi verificado.      |
 
 ```sql
 CREATE OR REPLACE TABLE `uolcatlovers.cat_facts` (
